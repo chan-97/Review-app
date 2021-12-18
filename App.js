@@ -1,5 +1,5 @@
 import React from "react";
-import { StatusBar } from 'expo-status-bar';
+import { StatusBar } from "expo-status-bar";
 import Home from "./screens/Home";
 import AppLoading from "expo-app-loading";
 import { useFonts, Inconsolata_900Black } from "@expo-google-fonts/inconsolata";
@@ -10,12 +10,12 @@ export default function App() {
 
   if(!fontsLoaded) {
     return <AppLoading />
-  } else {
-    return (
-      <>
-        <Home />
-        <StatusBar style="auto" />
-      </>
-    )
   }
+
+  return (
+    <>
+      <Home />
+      <StatusBar style="auto" />
+    </>
+  )
 }
